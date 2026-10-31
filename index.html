@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" style="width:100%; min-height:100%; margin:0; padding:0;">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f8f2e9">
   <title>المنزلاوي لتجارة الأعلاف</title>
 </head>
-<body style="margin:0; padding:0; width:100%; overflow-x:hidden;">
+<body style="margin:0; padding:0; width:100%; min-height:100%; overflow-x:clip; overflow-y:visible;">
 
 <div id="manzalawy-home" dir="rtl" data-language="ar">
 
 <style>
+/* Standalone Vercel page: use the real phone viewport and normal document scrolling. */
+html, body {
+  width:100%;
+  min-height:100%;
+  height:auto;
+  margin:0;
+  padding:0;
+  overflow-x:clip;
+  overflow-y:visible;
+  -webkit-text-size-adjust:100%;
+}
+body { display:block; }
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
 
 #manzalawy-home {
@@ -32,7 +44,7 @@
   overflow-x:clip;
   overflow-y:visible !important;
   position:relative;
-  display:flow-root;
+  display:block;
   line-height:1.7;
   box-sizing:border-box;
 }
