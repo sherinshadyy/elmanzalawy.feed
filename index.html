@@ -1,28 +1,43 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl" style="width:100%; min-height:100%; margin:0; padding:0;">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f8f2e9">
-  <title>المنزلاوي لتجارة الأعلاف</title>
+  <meta name="description" content="المنزلاوي لتجارة الأعلاف - توريد الأعلاف ومستلزمات المزارع والمشروعات.">
+  <title>المنزلاوي لتجارة الأعلاف | Elmanzalawy For Animal Feeds</title>
+  <style>
+    html {
+      width:100%;
+      min-height:100%;
+      margin:0;
+      padding:0;
+      -webkit-text-size-adjust:100%;
+      text-size-adjust:100%;
+      scroll-behavior:smooth;
+    }
+    body {
+      width:100%;
+      min-width:0;
+      min-height:100%;
+      margin:0;
+      padding:0;
+      overflow-x:hidden;
+      background:#f8f2e9;
+    }
+    #manzalawy-home {
+      width:100%;
+      max-width:100%;
+      min-height:100vh;
+      margin:0;
+    }
+  </style>
 </head>
-<body style="margin:0; padding:0; width:100%; min-height:100%; overflow-x:clip; overflow-y:visible;">
+<body>
 
 <div id="manzalawy-home" dir="rtl" data-language="ar">
 
 <style>
-/* Standalone Vercel page: use the real phone viewport and normal document scrolling. */
-html, body {
-  width:100%;
-  min-height:100%;
-  height:auto;
-  margin:0;
-  padding:0;
-  overflow-x:clip;
-  overflow-y:visible;
-  -webkit-text-size-adjust:100%;
-}
-body { display:block; }
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
 
 #manzalawy-home {
@@ -37,14 +52,7 @@ body { display:block; }
   color:var(--text);
   background:var(--cream);
   width:100%;
-  max-width:100%;
-  height:auto !important;
-  min-height:0;
-  max-height:none !important;
-  overflow-x:clip;
-  overflow-y:visible !important;
-  position:relative;
-  display:block;
+  overflow:visible;
   line-height:1.7;
   box-sizing:border-box;
 }
@@ -1158,21 +1166,14 @@ body { display:block; }
   }
 }
 
-/* FULL SCREEN WIDTH — REMOVE WHITE SIDE EDGES */
-
+/* STANDALONE PAGE WIDTH */
 #manzalawy-home {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
-  min-height: 0 !important;
-  max-height: none !important;
-  position: relative;
-  left: auto !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  overflow-x: clip !important;
-  overflow-y: visible !important;
-  display: flow-root;
+  width:100%;
+  max-width:100%;
+  margin:0;
+  position:relative;
+  left:auto;
+  overflow-x:clip;
 }
 
 /* ENGLISH HERO — TEXT ON THE RIGHT */
@@ -1191,18 +1192,6 @@ body { display:block; }
 /* MOBILE FULL WIDTH + ENGLISH HERO */
 
 @media(max-width:650px) {
-
-  #manzalawy-home {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-    max-height: none !important;
-    left: auto !important;
-    margin-left: 0 !important;
-    overflow-x: clip !important;
-    overflow-y: visible !important;
-  }
 
   #manzalawy-home[data-language="en"] .mw-hero {
     background-image:
@@ -1245,45 +1234,6 @@ body { display:block; }
 
   #manzalawy-home[data-language="en"] .mw-hero-copy .mw-order-btn {
     margin-left: auto;
-  }
-}
-
-
-/* PAGE FLOW SAFETY — KEEP ALL SECTIONS IN THE NORMAL SCROLLING PAGE */
-#manzalawy-home {
-  height:auto !important;
-  min-height:0 !important;
-  max-height:none !important;
-  overflow-x:clip !important;
-  overflow-y:visible !important;
-}
-
-#manzalawy-home > header,
-#manzalawy-home > section,
-#manzalawy-home > footer {
-  position:relative;
-  float:none;
-  clear:both;
-  width:100%;
-  max-height:none;
-  flex:none;
-}
-
-#manzalawy-home .mw-hero {
-  flex-shrink:0;
-}
-
-@media(max-width:650px) {
-  #manzalawy-home > header,
-  #manzalawy-home > section,
-  #manzalawy-home > footer {
-    height:auto;
-    min-height:0;
-  }
-
-  #manzalawy-home .mw-hero {
-    height:440px;
-    min-height:440px;
   }
 }
 
