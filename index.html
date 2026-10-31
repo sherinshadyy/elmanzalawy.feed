@@ -1,0 +1,2208 @@
+
+<div id="manzalawy-home" dir="rtl" data-language="ar">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+
+#manzalawy-home {
+  --green:#263e29;
+  --dark:#1e3422;
+  --light-green:#638c3b;
+  --cream:#f8f2e9;
+  --cream-dark:#eee2d2;
+  --gold:#e9b64e;
+  --text:#25251f;
+  font-family:'Cairo',sans-serif;
+  color:var(--text);
+  background:var(--cream);
+  width:100%;
+  overflow:hidden;
+  line-height:1.7;
+  box-sizing:border-box;
+}
+
+#manzalawy-home *,
+#manzalawy-home *::before,
+#manzalawy-home *::after {
+  box-sizing:border-box;
+}
+
+#manzalawy-home a {
+  color:inherit;
+  text-decoration:none;
+}
+
+#manzalawy-home button,
+#manzalawy-home input,
+#manzalawy-home select {
+  font-family:inherit;
+}
+
+#manzalawy-home .mw-icon {
+  width:27px;
+  height:27px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  flex-shrink:0;
+}
+
+#manzalawy-home .mw-container {
+  width:min(1180px,94%);
+  margin:auto;
+}
+
+/* HEADER */
+
+#manzalawy-home .mw-header {
+  height:82px;
+  background:rgba(250,246,239,.97);
+  display:flex;
+  align-items:center;
+  position:relative;
+  z-index:50;
+}
+
+#manzalawy-home .mw-header-inner {
+  width:94%;
+  max-width:1450px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+
+#manzalawy-home .mw-logo {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--green);
+  flex-shrink:0;
+}
+
+#manzalawy-home .mw-logo-text {
+  text-align:right;
+  line-height:1.15;
+}
+
+#manzalawy-home .mw-logo-text strong {
+  display:block;
+  font-size:25px;
+  font-weight:900;
+}
+
+#manzalawy-home .mw-logo-text span {
+  display:block;
+  font-size:15px;
+  font-weight:800;
+}
+
+#manzalawy-home .mw-logo-text small {
+  display:block;
+  font-size:11px;
+  direction:ltr;
+  font-weight:700;
+}
+
+#manzalawy-home .mw-logo-symbol {
+  width:65px;
+  height:65px;
+}
+
+#manzalawy-home .mw-nav {
+  display:flex;
+  align-items:center;
+  gap:35px;
+}
+
+#manzalawy-home .mw-nav a {
+  color:var(--dark);
+  font-size:14px;
+  font-weight:800;
+  transition:.25s;
+  position:relative;
+}
+
+#manzalawy-home .mw-nav a:hover,
+#manzalawy-home .mw-nav a.active {
+  color:var(--light-green);
+}
+
+#manzalawy-home .mw-nav a.active::after {
+  content:'';
+  position:absolute;
+  height:2px;
+  width:100%;
+  background:var(--gold);
+  bottom:-10px;
+  right:0;
+}
+
+#manzalawy-home .mw-header-actions {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+#manzalawy-home .mw-order-btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  background:var(--green);
+  color:white;
+  border-radius:40px;
+  padding:11px 20px;
+  font-size:14px;
+  font-weight:800;
+  transition:.25s;
+  white-space:nowrap;
+}
+
+#manzalawy-home .mw-order-btn:hover {
+  background:var(--light-green);
+  transform:translateY(-2px);
+}
+
+#manzalawy-home .mw-language-btn {
+  border:1px solid var(--green);
+  background:transparent;
+  color:var(--green);
+  border-radius:25px;
+  padding:8px 15px;
+  font-size:13px;
+  font-weight:900;
+  cursor:pointer;
+  transition:.25s;
+}
+
+#manzalawy-home .mw-language-btn:hover {
+  background:var(--green);
+  color:white;
+}
+
+#manzalawy-home .mw-menu-btn {
+  border:0;
+  background:transparent;
+  color:var(--green);
+  padding:5px;
+  cursor:pointer;
+  display:none;
+}
+
+/* HERO */
+
+#manzalawy-home .mw-hero {
+  position:relative;
+  min-height:360px;
+  height:clamp(360px,35.4vw,510px);
+  background-image:
+    linear-gradient(90deg,transparent 35%,rgba(248,242,233,.08) 52%,rgba(248,242,233,.90) 100%),
+    url('https://i.8upload.com/image/958b03750e8f8240/gemini-generated-image-ivlgiiivlgiiivlg.jpg');
+  background-position:center;
+  background-size:cover;
+  display:flex;
+  align-items:center;
+}
+
+#manzalawy-home .mw-hero-content {
+  width:min(1180px,94%);
+  margin:auto;
+  display:flex;
+  justify-content:flex-start;
+}
+
+#manzalawy-home .mw-hero-copy {
+  width:43%;
+  max-width:510px;
+  text-align:center;
+  color:var(--green);
+  padding:15px 0;
+}
+
+#manzalawy-home .mw-hero-copy h1 {
+  font-size:clamp(27px,3.1vw,39px);
+  line-height:1.38;
+  font-weight:900;
+  margin:0 0 17px;
+}
+
+#manzalawy-home .mw-hero-copy p {
+  font-size:clamp(14px,1.4vw,17px);
+  font-weight:700;
+  line-height:1.9;
+  margin:0 auto 23px;
+  max-width:470px;
+}
+
+#manzalawy-home .mw-hero-copy .mw-order-btn {
+  padding:13px 25px;
+}
+
+/* BENEFITS */
+
+#manzalawy-home .mw-benefits {
+  background:#f6f0e7;
+  padding:21px 0 15px;
+}
+
+#manzalawy-home .mw-benefits-grid {
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+}
+
+#manzalawy-home .mw-benefit {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:0 13px;
+  min-height:95px;
+  border-left:1px solid #dfbd80;
+}
+
+#manzalawy-home .mw-benefit:last-child {
+  border-left:0;
+}
+
+#manzalawy-home .mw-benefit .mw-icon {
+  width:43px;
+  height:43px;
+  color:var(--green);
+  margin-bottom:5px;
+}
+
+#manzalawy-home .mw-benefit p {
+  font-size:14px;
+  line-height:1.55;
+  font-weight:700;
+  margin:0;
+}
+
+/* SECTION TITLES */
+
+#manzalawy-home .mw-section-heading {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:35px;
+  margin:0 auto 13px;
+  text-align:center;
+}
+
+#manzalawy-home .mw-section-heading h2 {
+  font-size:32px;
+  line-height:1.4;
+  font-weight:900;
+  color:var(--green);
+  margin:0;
+}
+
+#manzalawy-home .mw-section-heading span {
+  width:70px;
+  height:2px;
+  background:var(--gold);
+}
+
+/* PRODUCTS */
+
+#manzalawy-home .mw-products {
+  padding:4px 0 28px;
+  background:var(--cream);
+}
+
+#manzalawy-home .mw-products-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:17px;
+}
+
+#manzalawy-home .mw-product {
+  background:linear-gradient(145deg,#f3e9dc,#eee2d3);
+  border-radius:19px;
+  overflow:hidden;
+  text-align:center;
+  transition:transform .3s,box-shadow .3s;
+}
+
+#manzalawy-home .mw-product:hover {
+  transform:translateY(-5px);
+  box-shadow:0 12px 28px rgba(38,62,41,.12);
+}
+
+#manzalawy-home .mw-product-image {
+  height:135px;
+  overflow:hidden;
+}
+
+#manzalawy-home .mw-product-image img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .5s;
+}
+
+#manzalawy-home .mw-product:hover .mw-product-image img {
+  transform:scale(1.04);
+}
+
+#manzalawy-home .mw-product-content {
+  padding:8px 17px 14px;
+}
+
+#manzalawy-home .mw-product h3 {
+  font-size:19px;
+  color:var(--green);
+  font-weight:900;
+  margin:0 0 4px;
+}
+
+#manzalawy-home .mw-product p {
+  font-size:14px;
+  font-weight:600;
+  line-height:1.7;
+  margin:0;
+}
+
+/* WHY CHOOSE US */
+
+#manzalawy-home .mw-why {
+  padding:0 0 26px;
+  background:var(--cream);
+}
+
+#manzalawy-home .mw-why-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+#manzalawy-home .mw-why-image {
+  height:235px;
+  overflow:hidden;
+  border-radius:19px;
+}
+
+#manzalawy-home .mw-why-image img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+#manzalawy-home .mw-why-content {
+  position:relative;
+}
+
+#manzalawy-home .mw-why-title {
+  display:flex;
+  align-items:center;
+  gap:25px;
+  margin-bottom:12px;
+}
+
+#manzalawy-home .mw-why-title span {
+  height:2px;
+  width:70px;
+  background:var(--gold);
+}
+
+#manzalawy-home .mw-why-title h2 {
+  color:var(--green);
+  font-size:29px;
+  font-weight:900;
+  margin:0;
+}
+
+#manzalawy-home .mw-why-list {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+#manzalawy-home .mw-why-list li {
+  display:flex;
+  align-items:flex-start;
+  gap:11px;
+  font-size:16px;
+  font-weight:700;
+  margin:7px 0;
+  line-height:1.7;
+}
+
+#manzalawy-home .mw-check {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:20px;
+  height:20px;
+  min-width:20px;
+  border-radius:50%;
+  background:#668d3d;
+  color:white;
+  margin-top:4px;
+}
+
+#manzalawy-home .mw-check svg {
+  width:13px;
+  height:13px;
+  stroke:white;
+  stroke-width:3;
+  fill:none;
+}
+
+/* CONTACT */
+
+#manzalawy-home .mw-contact {
+  width:min(1200px,96%);
+  margin:0 auto 23px;
+  padding:22px 28px;
+  border-radius:19px;
+  color:white;
+  background:
+    radial-gradient(ellipse at 20% 15%,rgba(255,255,255,.06),transparent 45%),
+    linear-gradient(125deg,#293f29,#1f3623);
+}
+
+#manzalawy-home .mw-contact-grid {
+  display:grid;
+  grid-template-columns:1fr 275px;
+  gap:30px;
+  align-items:center;
+}
+
+#manzalawy-home .mw-form-area {
+  text-align:center;
+  padding:0 8px;
+}
+
+#manzalawy-home .mw-contact-title {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  margin-bottom:4px;
+}
+
+#manzalawy-home .mw-contact-title h2 {
+  font-size:29px;
+  font-weight:900;
+  margin:0;
+}
+
+#manzalawy-home .mw-contact-title .mw-icon {
+  width:54px;
+  height:54px;
+  color:#91a94d;
+}
+
+#manzalawy-home .mw-form-subtitle {
+  font-size:15px;
+  font-weight:700;
+  margin:0 0 13px;
+}
+
+#manzalawy-home .mw-whatsapp-details {
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:18px 0;
+}
+
+#manzalawy-home .mw-whatsapp-details div {
+  background:#f1dfc6;
+  color:var(--green);
+  border-radius:22px;
+  padding:12px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  font-size:14px;
+  font-weight:800;
+}
+
+#manzalawy-home .mw-whatsapp-details .mw-icon {
+  width:24px;
+  height:24px;
+}
+
+#manzalawy-home .mw-whatsapp-btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  background:var(--gold);
+  color:var(--green);
+  border-radius:35px;
+  padding:13px 27px;
+  font-size:16px;
+  font-weight:900;
+  transition:.25s;
+}
+
+#manzalawy-home .mw-whatsapp-btn:hover {
+  background:#f4ca70;
+  transform:translateY(-3px);
+}
+
+#manzalawy-home .mw-form-note {
+  font-size:14px;
+  font-weight:600;
+  margin:10px 0 0;
+  line-height:1.8;
+}
+
+#manzalawy-home .mw-contact-details {
+  border-right:4px solid var(--gold);
+  padding-right:30px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+#manzalawy-home .mw-contact-location {
+  display:flex;
+  align-items:center;
+  gap:9px;
+  font-size:14px;
+  font-weight:800;
+  margin-bottom:5px;
+}
+
+#manzalawy-home .mw-phone {
+  display:flex;
+  align-items:center;
+  gap:11px;
+  direction:ltr;
+  justify-content:flex-end;
+  font-size:16px;
+  font-weight:800;
+  margin:3px 0;
+}
+
+#manzalawy-home .mw-phone .mw-icon {
+  color:var(--gold);
+  width:19px;
+  height:19px;
+}
+
+/* FOOTER */
+
+#manzalawy-home .mw-footer {
+  position:relative;
+  background:
+    radial-gradient(ellipse at 65% 20%,rgba(255,255,255,.06),transparent 40%),
+    linear-gradient(110deg,#243a25,#1d3321);
+  color:white;
+  padding:35px 0 24px;
+  border-top:9px solid var(--gold);
+  border-radius:48% 0 0 0 / 30px 0 0 0;
+}
+
+#manzalawy-home .mw-footer-inner {
+  width:min(1180px,92%);
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:25px;
+}
+
+#manzalawy-home .mw-footer-brand {
+  text-align:center;
+}
+
+#manzalawy-home .mw-footer-brand h3 {
+  font-size:21px;
+  font-weight:900;
+  margin:0 0 4px;
+}
+
+#manzalawy-home .mw-footer-brand p {
+  color:var(--gold);
+  font-size:19px;
+  font-weight:800;
+  margin:0;
+}
+
+#manzalawy-home .mw-footer-social {
+  display:flex;
+  align-items:center;
+  gap:14px;
+  direction:ltr;
+  justify-content:flex-start;
+  font-size:12px;
+  overflow-wrap:anywhere;
+}
+
+#manzalawy-home .mw-facebook {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:white;
+  color:var(--green);
+  width:35px;
+  height:35px;
+  min-width:35px;
+  border-radius:50%;
+}
+
+#manzalawy-home .mw-facebook svg {
+  width:22px;
+  height:22px;
+  fill:currentColor;
+}
+
+#manzalawy-home .mw-footer-credit {
+  text-align:center;
+  font-size:11px;
+  color:rgba(255,255,255,.65);
+  margin-top:20px;
+}
+
+/* ENGLISH LAYOUT */
+
+#manzalawy-home[data-language="en"] .mw-logo-text {
+  text-align:left;
+}
+
+#manzalawy-home[data-language="en"] .mw-logo-text small {
+  text-align:left;
+}
+
+#manzalawy-home[data-language="en"] .mw-hero-copy {
+  direction:ltr;
+}
+
+#manzalawy-home[data-language="en"] .mw-product {
+  direction:ltr;
+}
+
+#manzalawy-home[data-language="en"] .mw-why-title {
+  direction:ltr;
+}
+
+#manzalawy-home[data-language="en"] .mw-why-list li {
+  direction:ltr;
+  text-align:left;
+}
+
+#manzalawy-home[data-language="en"] .mw-contact-details {
+  border-right:0;
+  border-left:4px solid var(--gold);
+  padding-right:0;
+  padding-left:30px;
+}
+
+#manzalawy-home[data-language="en"] .mw-contact-location {
+  direction:ltr;
+}
+
+#manzalawy-home[data-language="en"] .mw-contact-grid {
+  direction:ltr;
+}
+
+#manzalawy-home[data-language="en"] .mw-footer-inner {
+  direction:ltr;
+}
+
+/* TABLET */
+
+@media(max-width:900px) {
+  #manzalawy-home .mw-nav {
+    gap:18px;
+  }
+
+  #manzalawy-home .mw-nav a {
+    font-size:12px;
+  }
+
+  #manzalawy-home .mw-logo-text strong {
+    font-size:20px;
+  }
+
+  #manzalawy-home .mw-logo-symbol {
+    width:52px;
+    height:52px;
+  }
+
+  #manzalawy-home .mw-hero-copy {
+    width:48%;
+  }
+
+  #manzalawy-home .mw-why-grid {
+    gap:25px;
+  }
+
+  #manzalawy-home .mw-contact-grid {
+    grid-template-columns:1fr 230px;
+    gap:20px;
+  }
+
+  #manzalawy-home .mw-contact-details {
+    padding-right:18px;
+  }
+}
+
+/* MOBILE */
+
+@media(max-width:650px) {
+
+  #manzalawy-home .mw-container {
+    width:92%;
+  }
+
+  #manzalawy-home .mw-header {
+    height:69px;
+  }
+
+  #manzalawy-home .mw-header-inner {
+    width:92%;
+    gap:8px;
+  }
+
+  #manzalawy-home .mw-logo {
+    gap:5px;
+  }
+
+  #manzalawy-home .mw-logo-symbol {
+    width:43px;
+    height:43px;
+  }
+
+  #manzalawy-home .mw-logo-text strong {
+    font-size:17px;
+  }
+
+  #manzalawy-home .mw-logo-text span {
+    font-size:11px;
+  }
+
+  #manzalawy-home .mw-logo-text small {
+    font-size:8px;
+  }
+
+  #manzalawy-home .mw-menu-btn {
+    display:block;
+    order:3;
+  }
+
+  #manzalawy-home .mw-menu-btn .mw-icon {
+    width:28px;
+    height:28px;
+  }
+
+  #manzalawy-home .mw-header-actions {
+    margin-right:auto;
+    gap:5px;
+  }
+
+  #manzalawy-home .mw-header-actions .mw-order-btn {
+    padding:8px 10px;
+    font-size:11px;
+    gap:5px;
+  }
+
+  #manzalawy-home .mw-header-actions .mw-icon {
+    width:16px;
+    height:16px;
+  }
+
+  #manzalawy-home .mw-language-btn {
+    padding:7px 10px;
+    font-size:11px;
+  }
+
+  #manzalawy-home .mw-nav {
+    display:none;
+    position:absolute;
+    top:69px;
+    right:0;
+    left:0;
+    padding:17px 5%;
+    background:#f8f2e9;
+    box-shadow:0 8px 15px rgba(0,0,0,.08);
+    flex-direction:column;
+    align-items:stretch;
+    gap:0;
+  }
+
+  #manzalawy-home .mw-nav.open {
+    display:flex;
+  }
+
+  #manzalawy-home .mw-nav a {
+    font-size:14px;
+    padding:10px 0;
+    border-bottom:1px solid #e7dccd;
+  }
+
+  #manzalawy-home .mw-nav a.active::after {
+    display:none;
+  }
+
+  #manzalawy-home .mw-hero {
+    height:440px;
+    min-height:440px;
+    background-image:
+      linear-gradient(0deg,rgba(248,242,233,.97) 0%,rgba(248,242,233,.86) 37%,rgba(248,242,233,.08) 75%),
+      url('https://i.8upload.com/image/958b03750e8f8240/gemini-generated-image-ivlgiiivlgiiivlg.jpg');
+    background-position:43% center;
+    background-size:cover;
+    align-items:flex-end;
+  }
+
+  #manzalawy-home .mw-hero-content {
+    width:92%;
+    justify-content:center;
+  }
+
+  #manzalawy-home .mw-hero-copy {
+    width:100%;
+    max-width:420px;
+    padding:0 0 25px;
+    text-align:center;
+  }
+
+  #manzalawy-home .mw-hero-copy h1 {
+    font-size:26px;
+    line-height:1.45;
+    margin-bottom:8px;
+  }
+
+  #manzalawy-home .mw-hero-copy p {
+    font-size:13px;
+    line-height:1.8;
+    margin-bottom:12px;
+  }
+
+  #manzalawy-home .mw-hero-copy .mw-order-btn {
+    padding:9px 19px;
+    font-size:12px;
+  }
+
+  #manzalawy-home .mw-benefits {
+    padding:17px 0;
+  }
+
+  #manzalawy-home .mw-benefits-grid {
+    grid-template-columns:repeat(2,1fr);
+    gap:14px 0;
+  }
+
+  #manzalawy-home .mw-benefit {
+    min-height:95px;
+    padding:5px 10px;
+    border-left:1px solid #dfbd80;
+  }
+
+  #manzalawy-home .mw-benefit:nth-child(2n) {
+    border-left:0;
+  }
+
+  #manzalawy-home .mw-benefit:last-child {
+    grid-column:1/-1;
+    border-left:0;
+    border-top:1px solid #dfbd80;
+    padding-top:13px;
+  }
+
+  #manzalawy-home .mw-benefit .mw-icon {
+    width:35px;
+    height:35px;
+  }
+
+  #manzalawy-home .mw-benefit p {
+    font-size:12px;
+  }
+
+  #manzalawy-home .mw-section-heading {
+    gap:15px;
+    margin-bottom:14px;
+  }
+
+  #manzalawy-home .mw-section-heading h2 {
+    font-size:25px;
+  }
+
+  #manzalawy-home .mw-section-heading span {
+    width:38px;
+  }
+
+  #manzalawy-home .mw-products {
+    padding:13px 0 23px;
+  }
+
+  #manzalawy-home .mw-products-grid {
+    grid-template-columns:1fr;
+    gap:13px;
+  }
+
+  #manzalawy-home .mw-product {
+    display:grid;
+    grid-template-columns:39% 1fr;
+    align-items:center;
+    text-align:right;
+    min-height:120px;
+    border-radius:15px;
+  }
+
+  #manzalawy-home .mw-product-image {
+    height:100%;
+    min-height:120px;
+  }
+
+  #manzalawy-home .mw-product-content {
+    padding:10px 13px;
+  }
+
+  #manzalawy-home .mw-product h3 {
+    font-size:16px;
+    margin-bottom:4px;
+  }
+
+  #manzalawy-home .mw-product p {
+    font-size:12px;
+    line-height:1.7;
+  }
+
+  #manzalawy-home .mw-why {
+    padding-bottom:22px;
+  }
+
+  #manzalawy-home .mw-why-grid {
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  #manzalawy-home .mw-why-image {
+    height:190px;
+    grid-row:2;
+  }
+
+  #manzalawy-home .mw-why-title {
+    justify-content:center;
+    gap:13px;
+  }
+
+  #manzalawy-home .mw-why-title h2 {
+    font-size:24px;
+  }
+
+  #manzalawy-home .mw-why-title span {
+    width:38px;
+  }
+
+  #manzalawy-home .mw-why-list li {
+    font-size:13px;
+    gap:8px;
+    margin:8px 0;
+  }
+
+  #manzalawy-home .mw-contact {
+    width:92%;
+    padding:20px 15px;
+    border-radius:17px;
+    margin-bottom:20px;
+  }
+
+  #manzalawy-home .mw-contact-grid {
+    grid-template-columns:1fr;
+    gap:22px;
+  }
+
+  #manzalawy-home .mw-contact-title {
+    gap:8px;
+  }
+
+  #manzalawy-home .mw-contact-title h2 {
+    font-size:22px;
+  }
+
+  #manzalawy-home .mw-contact-title .mw-icon {
+    width:37px;
+    height:37px;
+  }
+
+  #manzalawy-home .mw-form-subtitle {
+    font-size:13px;
+  }
+
+  #manzalawy-home .mw-whatsapp-details {
+    flex-direction:column;
+    gap:9px;
+  }
+
+  #manzalawy-home .mw-whatsapp-details div {
+    width:100%;
+    justify-content:flex-start;
+    font-size:13px;
+  }
+
+  #manzalawy-home .mw-whatsapp-btn {
+    width:100%;
+    font-size:14px;
+  }
+
+  #manzalawy-home .mw-form-note {
+    font-size:12px;
+    line-height:1.8;
+  }
+
+  #manzalawy-home .mw-contact-details {
+    border-right:0;
+    border-left:0;
+    border-top:2px solid var(--gold);
+    padding:15px 0 0;
+    gap:12px;
+  }
+
+  #manzalawy-home .mw-contact-location {
+    justify-content:center;
+    font-size:13px;
+  }
+
+  #manzalawy-home .mw-phone {
+    justify-content:center;
+    font-size:15px;
+  }
+
+  #manzalawy-home .mw-footer {
+    padding:30px 0 18px;
+    border-radius:35% 0 0 0 / 20px 0 0 0;
+  }
+
+  #manzalawy-home .mw-footer-inner {
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  #manzalawy-home .mw-footer-brand {
+    grid-row:1;
+  }
+
+  #manzalawy-home .mw-footer-brand h3 {
+    font-size:19px;
+  }
+
+  #manzalawy-home .mw-footer-brand p {
+    font-size:16px;
+  }
+
+  #manzalawy-home .mw-footer-social {
+    justify-content:center;
+    font-size:10px;
+  }
+
+  #manzalawy-home .mw-footer-credit {
+    margin-top:16px;
+  }
+
+  #manzalawy-home[data-language="en"] .mw-contact-details {
+    border-left:0;
+  }
+
+  #manzalawy-home[data-language="en"] .mw-why-list li {
+    font-size:12px;
+  }
+}
+
+@media(max-width:360px) {
+  #manzalawy-home .mw-logo-text strong {
+    font-size:15px;
+  }
+
+  #manzalawy-home .mw-header-actions .mw-order-btn {
+    font-size:10px;
+    padding:7px 9px;
+  }
+
+  #manzalawy-home .mw-hero-copy h1 {
+    font-size:23px;
+  }
+}
+
+/* FULL SCREEN WIDTH — REMOVE WHITE SIDE EDGES */
+
+#manzalawy-home {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  left: auto;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  overflow-x: clip;
+  overflow-y: visible !important;
+  height: auto !important;
+  min-height: 0;
+}
+
+/* ENGLISH HERO — TEXT ON THE RIGHT */
+
+#manzalawy-home[data-language="en"] .mw-hero-content {
+  justify-content: flex-end;
+}
+
+#manzalawy-home[data-language="en"] .mw-hero-copy {
+  text-align: right;
+  direction: ltr;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* MOBILE FULL WIDTH + ENGLISH HERO */
+
+@media(max-width:650px) {
+
+  #manzalawy-home {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    left: 50%;
+    margin-left: -50vw !important;
+    overflow-x: clip;
+  }
+
+  #manzalawy-home[data-language="en"] .mw-hero {
+    background-image:
+      linear-gradient(
+        0deg,
+        rgba(248,242,233,.96) 0%,
+        rgba(248,242,233,.85) 36%,
+        rgba(248,242,233,.10) 78%
+      ),
+      url('https://i.8upload.com/image/958b03750e8f8240/gemini-generated-image-ivlgiiivlgiiivlg.jpg');
+
+    background-position: 43% center;
+    background-size: cover;
+  }
+
+  #manzalawy-home[data-language="en"] .mw-hero-content {
+    justify-content: flex-end;
+    width: 92%;
+  }
+
+  #manzalawy-home[data-language="en"] .mw-hero-copy {
+    width: 88%;
+    max-width: 390px;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    direction: ltr;
+    padding-bottom: 25px;
+  }
+
+  #manzalawy-home[data-language="en"] .mw-hero-copy h1 {
+    font-size: clamp(21px, 6vw, 26px);
+    line-height: 1.4;
+  }
+
+  #manzalawy-home[data-language="en"] .mw-hero-copy p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  #manzalawy-home[data-language="en"] .mw-hero-copy .mw-order-btn {
+    margin-left: auto;
+  }
+}
+
+
+
+/* FINAL MOBILE REFINEMENTS — preserves the desktop layout */
+#manzalawy-home {
+  min-height:100vh;
+  height:auto;
+  overflow-x:clip;
+  overflow-y:visible;
+}
+
+#manzalawy-home img,
+#manzalawy-home svg {
+  max-width:100%;
+}
+
+@media (max-width:650px) {
+  #manzalawy-home,
+  #manzalawy-home * {
+    min-width:0;
+  }
+
+  #manzalawy-home {
+    width:100vw !important;
+    max-width:100vw !important;
+    overflow-x:clip;
+    overflow-y:visible;
+  }
+
+  #manzalawy-home .mw-header {
+    height:64px;
+  }
+
+  #manzalawy-home .mw-header-inner {
+    width:94%;
+    gap:5px;
+  }
+
+  #manzalawy-home .mw-logo {
+    gap:4px;
+  }
+
+  #manzalawy-home .mw-logo-symbol {
+    width:37px;
+    height:37px;
+  }
+
+  #manzalawy-home .mw-logo-text strong {
+    font-size:15px;
+  }
+
+  #manzalawy-home .mw-logo-text span {
+    font-size:10px;
+  }
+
+  #manzalawy-home .mw-logo-text small {
+    font-size:7px;
+  }
+
+  #manzalawy-home .mw-header-actions {
+    gap:5px;
+  }
+
+  #manzalawy-home .mw-header-actions .mw-order-btn {
+    padding:7px 9px;
+    font-size:10px;
+    gap:4px;
+  }
+
+  #manzalawy-home .mw-language-btn {
+    padding:6px 8px;
+    font-size:10px;
+  }
+
+  #manzalawy-home .mw-menu-btn .mw-icon {
+    width:24px;
+    height:24px;
+  }
+
+  #manzalawy-home .mw-nav {
+    top:64px;
+    z-index:100;
+    width:100%;
+  }
+
+  #manzalawy-home .mw-hero {
+    height:clamp(350px,112vw,420px);
+    min-height:350px;
+    max-height:420px;
+    background-position:43% center;
+  }
+
+  #manzalawy-home .mw-hero-content {
+    width:92%;
+  }
+
+  #manzalawy-home .mw-hero-copy {
+    width:100%;
+    max-width:390px;
+    padding:0 4px 20px;
+  }
+
+  #manzalawy-home .mw-hero-copy h1 {
+    font-size:clamp(21px,5.8vw,25px);
+    line-height:1.45;
+    margin-bottom:8px;
+  }
+
+  #manzalawy-home .mw-hero-copy p {
+    font-size:clamp(11px,3.2vw,13px);
+    line-height:1.8;
+    margin-bottom:12px;
+  }
+
+  #manzalawy-home .mw-hero-copy .mw-order-btn {
+    padding:9px 17px;
+    font-size:12px;
+  }
+
+  #manzalawy-home .mw-benefits {
+    padding:14px 0;
+  }
+
+  #manzalawy-home .mw-benefits-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px 0;
+  }
+
+  #manzalawy-home .mw-benefit {
+    min-height:82px;
+    padding:7px 8px;
+  }
+
+  #manzalawy-home .mw-benefit .mw-icon {
+    width:31px;
+    height:31px;
+    margin-bottom:4px;
+  }
+
+  #manzalawy-home .mw-benefit p {
+    font-size:clamp(10px,2.9vw,12px);
+    line-height:1.55;
+  }
+
+  #manzalawy-home .mw-section-heading {
+    gap:10px;
+    margin-bottom:12px;
+    padding:0 5px;
+  }
+
+  #manzalawy-home .mw-section-heading h2 {
+    font-size:clamp(20px,5.5vw,24px);
+  }
+
+  #manzalawy-home .mw-section-heading span {
+    width:30px;
+    flex:0 0 30px;
+  }
+
+  #manzalawy-home .mw-products {
+    padding:12px 0 20px;
+  }
+
+  #manzalawy-home .mw-products-grid {
+    grid-template-columns:minmax(0,1fr);
+    gap:11px;
+  }
+
+  #manzalawy-home .mw-product {
+    display:grid;
+    grid-template-columns:36% minmax(0,1fr);
+    min-height:108px;
+    border-radius:13px;
+    text-align:right;
+  }
+
+  #manzalawy-home .mw-product-image {
+    height:100%;
+    min-height:108px;
+  }
+
+  #manzalawy-home .mw-product-content {
+    padding:8px 11px;
+  }
+
+  #manzalawy-home .mw-product h3 {
+    font-size:14px;
+    line-height:1.5;
+    margin-bottom:3px;
+  }
+
+  #manzalawy-home .mw-product p {
+    font-size:11px;
+    line-height:1.6;
+  }
+
+  #manzalawy-home .mw-why {
+    padding-bottom:19px;
+  }
+
+  #manzalawy-home .mw-why-grid {
+    grid-template-columns:minmax(0,1fr);
+    gap:13px;
+  }
+
+  #manzalawy-home .mw-why-content {
+    width:100%;
+  }
+
+  #manzalawy-home .mw-why-title {
+    justify-content:center;
+    gap:10px;
+  }
+
+  #manzalawy-home .mw-why-title h2 {
+    font-size:clamp(20px,5.4vw,23px);
+  }
+
+  #manzalawy-home .mw-why-title span {
+    width:28px;
+    flex:0 0 28px;
+  }
+
+  #manzalawy-home .mw-why-list li {
+    font-size:12px;
+    line-height:1.65;
+    gap:8px;
+    margin:7px 0;
+  }
+
+  #manzalawy-home .mw-why-image {
+    width:100%;
+    height:clamp(145px,48vw,180px);
+    grid-row:2;
+  }
+
+  #manzalawy-home .mw-contact {
+    width:92%;
+    padding:18px 12px;
+    margin-bottom:17px;
+    border-radius:15px;
+  }
+
+  #manzalawy-home .mw-contact-grid {
+    grid-template-columns:minmax(0,1fr);
+    gap:18px;
+  }
+
+  #manzalawy-home .mw-form-area {
+    padding:0;
+  }
+
+  #manzalawy-home .mw-contact-title {
+    gap:7px;
+  }
+
+  #manzalawy-home .mw-contact-title h2 {
+    font-size:clamp(19px,5.2vw,22px);
+  }
+
+  #manzalawy-home .mw-contact-title .mw-icon {
+    width:34px;
+    height:34px;
+  }
+
+  #manzalawy-home .mw-form-subtitle {
+    font-size:12px;
+  }
+
+  #manzalawy-home .mw-whatsapp-details {
+    flex-direction:column;
+    gap:8px;
+    margin:13px 0;
+  }
+
+  #manzalawy-home .mw-whatsapp-details div {
+    width:100%;
+    padding:9px 11px;
+    font-size:11px;
+    justify-content:flex-start;
+  }
+
+  #manzalawy-home .mw-whatsapp-details .mw-icon {
+    width:20px;
+    height:20px;
+  }
+
+  #manzalawy-home .mw-whatsapp-btn {
+    width:100%;
+    padding:11px 14px;
+    font-size:13px;
+  }
+
+  #manzalawy-home .mw-form-note {
+    font-size:11px;
+  }
+
+  #manzalawy-home .mw-contact-details,
+  #manzalawy-home[data-language="en"] .mw-contact-details {
+    border:0;
+    border-top:1px solid var(--gold);
+    padding:14px 0 0;
+    gap:11px;
+  }
+
+  #manzalawy-home .mw-contact-location {
+    justify-content:center;
+    text-align:center;
+    font-size:12px;
+  }
+
+  #manzalawy-home .mw-phone {
+    justify-content:center;
+    font-size:14px;
+  }
+
+  #manzalawy-home .mw-footer {
+    padding:24px 0 16px;
+    border-top-width:6px;
+    border-radius:28px 0 0 0;
+  }
+
+  #manzalawy-home .mw-footer-inner {
+    width:92%;
+    grid-template-columns:minmax(0,1fr);
+    gap:13px;
+  }
+
+  #manzalawy-home .mw-footer-brand h3 {
+    font-size:16px;
+  }
+
+  #manzalawy-home .mw-footer-brand p {
+    font-size:14px;
+  }
+
+  #manzalawy-home .mw-footer-social {
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:9px;
+    font-size:10px;
+  }
+
+  #manzalawy-home .mw-footer-credit {
+    font-size:10px;
+    margin-top:12px;
+  }
+
+  /* English text direction and card alignment */
+  #manzalawy-home[data-language="en"] .mw-product {
+    direction:ltr;
+    text-align:left;
+  }
+
+  #manzalawy-home[data-language="en"] .mw-why-title {
+    direction:ltr;
+  }
+
+  #manzalawy-home[data-language="en"] .mw-why-list li {
+    direction:ltr;
+    text-align:left;
+  }
+
+  #manzalawy-home[data-language="en"] .mw-contact-details {
+    direction:ltr;
+  }
+}
+
+@media(max-width:380px) {
+  #manzalawy-home .mw-header-inner {
+    width:96%;
+  }
+
+  #manzalawy-home .mw-logo-symbol {
+    width:33px;
+    height:33px;
+  }
+
+  #manzalawy-home .mw-logo-text strong {
+    font-size:13px;
+  }
+
+  #manzalawy-home .mw-logo-text span {
+    font-size:9px;
+  }
+
+  #manzalawy-home .mw-header-actions .mw-order-btn {
+    padding:6px 7px;
+    font-size:9px;
+  }
+
+  #manzalawy-home .mw-language-btn {
+    padding:5px 6px;
+    font-size:9px;
+  }
+}
+
+</style>
+
+<!-- SVG ICON LIBRARY -->
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     style="position:absolute;width:0;height:0;overflow:hidden"
+     aria-hidden="true">
+
+  <symbol id="mw-phone" viewBox="0 0 24 24">
+    <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.5 3.2a2 2 0 0 1-.6 1.7L7.2 10.4a16 16 0 0 0 6.4 6.4l1.8-1.8a2 2 0 0 1 1.7-.6l3.2.5a2 2 0 0 1 1.7 2z"/>
+  </symbol>
+
+  <symbol id="mw-menu" viewBox="0 0 24 24">
+    <path d="M3 6h18M3 12h18M3 18h18"/>
+  </symbol>
+
+  <symbol id="mw-handshake" viewBox="0 0 24 24">
+    <path d="m11 17 2 2a2 2 0 0 0 3-3l-2-2m-3 3-2 2a2 2 0 0 1-3-3l2-2m6-5 2-2 5 5-2 2m-11 0-2-2-5 5 2 2m5-10 3-2 4 2-4 5a2 2 0 0 1-3 0l-2-2"/>
+  </symbol>
+
+  <symbol id="mw-truck" viewBox="0 0 24 24">
+    <path d="M3 4h11v13H3zM14 9h4l4 4v4h-8z"/>
+    <circle cx="7.5" cy="19" r="2"/>
+    <circle cx="18" cy="19" r="2"/>
+    <path d="M3 8h7M3 12h5"/>
+  </symbol>
+
+  <symbol id="mw-shield" viewBox="0 0 24 24">
+    <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/>
+    <path d="m9 12 2 2 4-4"/>
+  </symbol>
+
+  <symbol id="mw-award" viewBox="0 0 24 24">
+    <circle cx="12" cy="8" r="7"/>
+    <path d="m8.2 13.9-1 8.1 4.8-3 4.8 3-1-8.1"/>
+    <path d="m9 8 2 2 4-4"/>
+  </symbol>
+
+  <symbol id="mw-tractor" viewBox="0 0 24 24">
+    <path d="M3 13h12l3 4H5zM8 13V7h5l2 6M3 17h17"/>
+    <circle cx="7" cy="18" r="3"/>
+    <circle cx="18" cy="18" r="2"/>
+    <path d="M15 7h3l2 6M10 7V4"/>
+  </symbol>
+
+  <symbol id="mw-check" viewBox="0 0 24 24">
+    <path d="m5 12 4 4L19 6"/>
+  </symbol>
+
+  <symbol id="mw-package" viewBox="0 0 24 24">
+    <path d="m12 3 9 5-9 5-9-5 9-5z"/>
+    <path d="M3 8v10l9 5 9-5V8M12 13v10M7.5 5.5l9 5"/>
+  </symbol>
+
+  <symbol id="mw-map-pin" viewBox="0 0 24 24">
+    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"/>
+    <circle cx="12" cy="10" r="2.5"/>
+  </symbol>
+
+  <symbol id="mw-telegram" viewBox="0 0 24 24">
+    <path d="m22 2-7 20-4-9-9-4 20-7z"/>
+    <path d="M22 2 11 13"/>
+  </symbol>
+
+  <symbol id="mw-facebook" viewBox="0 0 24 24">
+    <path d="M14 8h3V4h-3a5 5 0 0 0-5 5v3H6v4h3v7h4v-7h3l1-4h-4V9a1 1 0 0 1 1-1z"/>
+  </symbol>
+
+</svg>
+
+<!-- HEADER -->
+
+<header class="mw-header">
+  <div class="mw-header-inner">
+
+    <button class="mw-menu-btn" type="button"
+            aria-label="Open navigation"
+            onclick="mwMenuToggle()">
+      <svg class="mw-icon"><use href="#mw-menu"/></svg>
+    </button>
+
+    <a class="mw-logo" href="#mw-home">
+      <div class="mw-logo-text">
+        <strong data-ar="المنزلاوي" data-en="Elmanzalawy">المنزلاوي</strong>
+        <span data-ar="لتجارة الأعلاف" data-en="For Animal Feeds">لتجارة الأعلاف</span>
+        <small>Elmanzalawy</small>
+      </div>
+
+      <svg class="mw-logo-symbol" viewBox="0 0 70 70" fill="none">
+        <path d="M35 65V12" stroke="#263e29" stroke-width="3"/>
+        <path d="M35 25C24 21 21 13 25 7C34 11 37 17 35 25Z" fill="#e8b34c"/>
+        <path d="M36 36C47 29 48 20 44 14C35 19 32 28 36 36Z" fill="#e8b34c"/>
+        <path d="M34 45C22 40 18 32 22 25C32 29 37 37 34 45Z" fill="#e8b34c"/>
+        <path d="M37 53C49 46 51 38 47 31C37 36 33 45 37 53Z" fill="#e8b34c"/>
+        <path d="M9 53Q35 38 61 53V62Q35 75 9 62Z" fill="#263e29"/>
+        <path d="M13 58 32 47M57 58 39 47" stroke="#f8f2e9" stroke-width="2"/>
+      </svg>
+    </a>
+
+    <nav class="mw-nav">
+      <a class="active" href="#mw-home"
+         data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+
+      <a href="#mw-products"
+         data-ar="منتجاتنا" data-en="Products">منتجاتنا</a>
+
+      <a href="#mw-why"
+         data-ar="لماذا نحن؟" data-en="Why Us?">لماذا نحن؟</a>
+
+      <a href="#mw-contact"
+         data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a>
+    </nav>
+
+    <div class="mw-header-actions">
+
+      <button class="mw-language-btn" type="button"
+              onclick="mwToggleLanguage()">
+        EN
+      </button>
+
+      <a class="mw-order-btn" href="#mw-contact">
+        <svg class="mw-icon"><use href="#mw-phone"/></svg>
+        <span data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</span>
+      </a>
+
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+
+<section class="mw-hero" id="mw-home">
+  <div class="mw-hero-content">
+
+    <div class="mw-hero-copy">
+
+      <h1
+        data-ar="كل احتياجات مزرعتك من الأعلاف... في مكان واحد مع المنزلاوي!"
+        data-en="Everything Your Farm Needs in Animal Feed... All in One Place with Elmanzalawy!">
+        كل احتياجات مزرعتك من الأعلاف... في مكان واحد مع المنزلاوي!
+      </h1>
+
+      <p
+        data-ar="بتدور على مورد يوفر لك البرسيم الحجازي وتبن القمح والأعلاف المركزة بكميات تناسب حجم مشروعك؟"
+        data-en="Looking for a reliable supplier of alfalfa, wheat straw and concentrated animal feed in quantities that suit your project?">
+        بتدور على مورد يوفر لك البرسيم الحجازي وتبن القمح والأعلاف المركزة بكميات تناسب حجم مشروعك؟
+      </p>
+
+      <a href="#mw-contact" class="mw-order-btn">
+        <span data-ar="اطلب عرض سعرك الآن" data-en="Request Your Quote Now">اطلب عرض سعرك الآن</span>
+        <span>←</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+
+<section class="mw-benefits">
+  <div class="mw-container mw-benefits-grid">
+
+    <div class="mw-benefit">
+      <svg class="mw-icon"><use href="#mw-handshake"/></svg>
+      <p data-ar="خدمات توريد للمشروعات في مصر وكل دول الخليج"
+         data-en="Supply services for projects across Egypt and the Gulf">
+        خدمات توريد للمشروعات في مصر وكل دول الخليج
+      </p>
+    </div>
+
+    <div class="mw-benefit">
+      <svg class="mw-icon"><use href="#mw-truck"/></svg>
+      <p data-ar="شحن وتوصيل مباشر إلى موقع المزرعة"
+         data-en="Direct shipping and delivery to your farm">
+        شحن وتوصيل مباشر إلى موقع المزرعة
+      </p>
+    </div>
+
+    <div class="mw-benefit">
+      <svg class="mw-icon"><use href="#mw-shield"/></svg>
+      <p data-ar="إمكانية تنظيم التوريد وفق الكميات المطلوبة"
+         data-en="Flexible supply scheduling based on required quantities">
+        إمكانية تنظيم التوريد وفق الكميات المطلوبة
+      </p>
+    </div>
+
+    <div class="mw-benefit">
+      <svg class="mw-icon"><use href="#mw-award"/></svg>
+      <p data-ar="تنوع المنتجات لتلبية احتياجات مشروعاتك"
+         data-en="A variety of products to meet your project needs">
+        تنوع المنتجات لتلبية احتياجات مشروعاتك
+      </p>
+    </div>
+
+    <div class="mw-benefit">
+      <svg class="mw-icon"><use href="#mw-tractor"/></svg>
+      <p data-ar="توفير كميات للمزارع والمشروعات الكبرى"
+         data-en="Bulk quantities for farms and large-scale projects">
+        توفير كميات للمزارع والمشروعات الكبرى
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="mw-products" id="mw-products">
+  <div class="mw-container">
+
+    <div class="mw-section-heading">
+      <span></span>
+      <h2 data-ar="منتجاتنا" data-en="Our Products">منتجاتنا</h2>
+      <span></span>
+    </div>
+
+    <div class="mw-products-grid">
+
+      <article class="mw-product">
+
+        <div class="mw-product-image">
+          <img
+            src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=900&q=85"
+            alt="Concentrated animal feed"
+            loading="lazy">
+        </div>
+
+        <div class="mw-product-content">
+          <h3 data-ar="الأعلاف المركزة" data-en="Concentrated Feed">
+            الأعلاف المركزة
+          </h3>
+
+          <p
+            data-ar="أعلاف للتسمين والحلاب والأغنام، بنسب بروتين متنوعة من 16% إلى 21% لتلبية احتياجات مراحل الإنتاج المختلفة."
+            data-en="Feed for fattening, dairy cattle and sheep, with protein levels ranging from 16% to 21% to meet different production needs.">
+            أعلاف للتسمين والحلاب والأغنام، بنسب بروتين متنوعة من 16% إلى 21% لتلبية احتياجات مراحل الإنتاج المختلفة.
+          </p>
+        </div>
+
+      </article>
+
+      <article class="mw-product">
+
+        <div class="mw-product-image">
+          <img
+            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=85"
+            alt="Wheat straw"
+            loading="lazy">
+        </div>
+
+        <div class="mw-product-content">
+          <h3 data-ar="تبن القمح" data-en="Wheat Straw">تبن القمح</h3>
+
+          <p
+            data-ar="من مستلزمات التغذية الأساسية التي تدخل ضمن برامج تغذية الماشية والأغنام وفقًا لتركيبة العليقة."
+            data-en="An essential feed ingredient used in livestock and sheep feeding programs as part of balanced rations.">
+            من مستلزمات التغذية الأساسية التي تدخل ضمن برامج تغذية الماشية والأغنام وفقًا لتركيبة العليقة.
+          </p>
+        </div>
+
+      </article>
+
+      <article class="mw-product">
+
+        <div class="mw-product-image">
+          <img
+            src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&w=900&q=85"
+            alt="Alfalfa"
+            loading="lazy">
+        </div>
+
+        <div class="mw-product-content">
+          <h3 data-ar="البرسيم الحجازي" data-en="Alfalfa">البرسيم الحجازي</h3>
+
+          <p
+            data-ar="خيار مميز ضمن برامج تغذية الماشية، مع توريد يناسب احتياجات المزارع."
+            data-en="A valuable choice for livestock feeding programs, supplied to suit individual farm requirements.">
+            خيار مميز ضمن برامج تغذية الماشية، مع توريد يناسب احتياجات المزارع.
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="mw-why" id="mw-why">
+  <div class="mw-container mw-why-grid">
+
+    <div class="mw-why-image">
+      <img
+        src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=85"
+        alt="Agricultural facility"
+        loading="lazy">
+    </div>
+
+    <div class="mw-why-content">
+
+      <div class="mw-why-title">
+        <span></span>
+        <h2 data-ar="لماذا تختار المنزلاوي؟"
+            data-en="Why Choose Elmanzalawy?">
+          لماذا تختار المنزلاوي؟
+        </h2>
+      </div>
+
+      <ul class="mw-why-list">
+
+        <li>
+          <span class="mw-check">
+            <svg><use href="#mw-check"/></svg>
+          </span>
+          <span data-ar="توفير كميات للمزارع والمشروعات الكبرى."
+                data-en="Bulk quantities for farms and large-scale projects.">
+            توفير كميات للمزارع والمشروعات الكبرى.
+          </span>
+        </li>
+
+        <li>
+          <span class="mw-check">
+            <svg><use href="#mw-check"/></svg>
+          </span>
+          <span data-ar="تنوع المنتجات لتلبية احتياجات مشروعك."
+                data-en="A variety of products to meet your project needs.">
+            تنوع المنتجات لتلبية احتياجات مشروعك.
+          </span>
+        </li>
+
+        <li>
+          <span class="mw-check">
+            <svg><use href="#mw-check"/></svg>
+          </span>
+          <span data-ar="إمكانية تنظيم التوريد وفق الكميات المطلوبة."
+                data-en="Flexible supply scheduling based on required quantities.">
+            إمكانية تنظيم التوريد وفق الكميات المطلوبة.
+          </span>
+        </li>
+
+        <li>
+          <span class="mw-check">
+            <svg><use href="#mw-check"/></svg>
+          </span>
+          <span data-ar="شحن وتوصيل مباشر إلى موقع المزرعة."
+                data-en="Direct shipping and delivery to your farm.">
+            شحن وتوصيل مباشر إلى موقع المزرعة.
+          </span>
+        </li>
+
+        <li>
+          <span class="mw-check">
+            <svg><use href="#mw-check"/></svg>
+          </span>
+          <span data-ar="خدمات توريد للمشروعات في مصر وكل دول الخليج."
+                data-en="Supply services for projects across Egypt and the Gulf.">
+            خدمات توريد للمشروعات في مصر وكل دول الخليج.
+          </span>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT / WHATSAPP -->
+
+<section class="mw-contact" id="mw-contact">
+
+  <div class="mw-contact-grid">
+
+    <div class="mw-form-area">
+
+      <div class="mw-contact-title">
+        <h2 data-ar="اطلب عرض سعرك الآن!"
+            data-en="Request Your Price Quote!">
+          اطلب عرض سعرك الآن!
+        </h2>
+
+        <svg class="mw-icon"><use href="#mw-telegram"/></svg>
+      </div>
+
+      <p class="mw-form-subtitle"
+         data-ar="أرسل لنا عبر واتساب 3 بيانات فقط:"
+         data-en="Send us these 3 details on WhatsApp:">
+        أرسل لنا عبر واتساب 3 بيانات فقط:
+      </p>
+
+      <div class="mw-whatsapp-details">
+
+        <div>
+          <svg class="mw-icon"><use href="#mw-map-pin"/></svg>
+          <span data-ar="موقع المزرعة"
+                data-en="Farm Location">موقع المزرعة</span>
+        </div>
+
+        <div>
+          <svg class="mw-icon"><use href="#mw-package"/></svg>
+          <span data-ar="الكمية المطلوبة"
+                data-en="Required Quantity">الكمية المطلوبة</span>
+        </div>
+
+        <div>
+          <svg class="mw-icon"><use href="#mw-tractor"/></svg>
+          <span data-ar="نوع النشاط: تسمين أو حلاب أو أغنام"
+                data-en="Activity Type: Fattening, Dairy or Sheep">
+            نوع النشاط: تسمين أو حلاب أو أغنام
+          </span>
+        </div>
+
+      </div>
+
+      <a class="mw-whatsapp-btn"
+         id="mw-whatsapp-link"
+         href="https://wa.me/201080906661?text=السلام%20عليكم،%20أرغب%20في%20طلب%20عرض%20سعر.%0A%0Aموقع%20المزرعة:%0Aالكمية%20المطلوبة:%0Aنوع%20النشاط:"
+         target="_blank"
+         rel="noopener">
+
+        <svg viewBox="0 0 24 24" width="23" height="23" fill="currentColor">
+          <path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23l5.5-1.4A11.8 11.8 0 0 0 20.5 3.5ZM12 21a9.1 9.1 0 0 1-4.6-1.2l-.3-.2-3.2.8.9-3.1-.2-.3A9.1 9.1 0 1 1 12 21Zm5-6.8c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.4-2.2-1.3-.8-.7-1.3-1.5-1.5-1.8-.2-.3 0-.5.1-.6l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.6-1-2.2c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1-1.1 2.4s1.1 2.7 1.3 2.9c.2.2 2.2 3.4 5.3 4.7.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/>
+        </svg>
+
+        <span data-ar="تواصل معنا عبر واتساب"
+              data-en="Contact Us on WhatsApp">
+          تواصل معنا عبر واتساب
+        </span>
+
+      </a>
+
+      <p class="mw-form-note"
+         data-ar="وسيتواصل معك فريق المبيعات لمناقشة احتياجاتك وتقديم عرض مناسب."
+         data-en="Our sales team will discuss your requirements and provide a suitable quotation.">
+        وسيتواصل معك فريق المبيعات لمناقشة احتياجاتك وتقديم عرض مناسب.
+      </p>
+
+    </div>
+
+    <div class="mw-contact-details">
+
+      <div>
+        <div class="mw-contact-location">
+          <span data-ar="مصر – الإدارة والمبيعات"
+                data-en="Egypt – Sales & Administration">
+            مصر – الإدارة والمبيعات
+          </span>
+        </div>
+
+        <a class="mw-phone" href="tel:+201080906661">
+          <svg class="mw-icon"><use href="#mw-phone"/></svg>
+          +20 10 80906661
+        </a>
+
+        <a class="mw-phone" href="tel:+201080906662">
+          <svg class="mw-icon"><use href="#mw-phone"/></svg>
+          +20 10 80906662
+        </a>
+      </div>
+
+      <div>
+        <div class="mw-contact-location">
+          <span data-ar="دولة الإمارات – أبو ظبي"
+                data-en="United Arab Emirates – Abu Dhabi">
+            دولة الإمارات – أبو ظبي
+          </span>
+        </div>
+
+        <a class="mw-phone" href="tel:+971543237573">
+          <svg class="mw-icon"><use href="#mw-phone"/></svg>
+          +971 54 323 7573
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="mw-footer">
+
+  <div class="mw-footer-inner">
+
+    <div class="mw-footer-social">
+
+      <a class="mw-facebook"
+         href="https://www.facebook.com/share/1FMAEeLToJ/?mibextid=wwXIfr"
+         target="_blank"
+         rel="noopener"
+         aria-label="Facebook">
+
+        <svg><use href="#mw-facebook"/></svg>
+      </a>
+
+      <a href="https://www.facebook.com/share/1FMAEeLToJ/?mibextid=wwXIfr"
+         target="_blank"
+         rel="noopener">
+        Facebook - Elmanzalawy
+      </a>
+
+    </div>
+
+    <div class="mw-footer-brand">
+
+      <h3 data-ar="المنزلاوي لتجارة الأعلاف..."
+          data-en="Elmanzalawy For Animal Feeds...">
+        المنزلاوي لتجارة الأعلاف...
+      </h3>
+
+      <p data-ar="الجودة في كل كمية."
+         data-en="Quality in Every Quantity.">
+        الجودة في كل كمية.
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="mw-footer-credit">
+    Elmanzalawy For Animal Feeds
+  </div>
+
+</footer>
+
+</div>
+
+<script>
+(function() {
+
+  const root = document.getElementById('manzalawy-home');
+  if (!root) return;
+
+  /* MOBILE MENU */
+
+  window.mwMenuToggle = function() {
+    root.querySelector('.mw-nav').classList.toggle('open');
+  };
+
+  root.querySelectorAll('.mw-nav a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      root.querySelector('.mw-nav').classList.remove('open');
+    });
+  });
+
+  /* LANGUAGE SWITCH */
+
+  window.mwToggleLanguage = function() {
+
+    const current = root.getAttribute('data-language') || 'ar';
+    const next = current === 'ar' ? 'en' : 'ar';
+
+    root.setAttribute('data-language', next);
+    root.setAttribute('dir', next === 'ar' ? 'rtl' : 'ltr');
+
+    /* Translate all marked content */
+    root.querySelectorAll('[data-ar][data-en]').forEach(function(el) {
+      el.textContent = el.getAttribute('data-' + next);
+    });
+
+    /* Change language button */
+    root.querySelector('.mw-language-btn').textContent =
+      next === 'ar' ? 'EN' : 'عربي';
+
+    /* Update navigation direction */
+    root.querySelector('.mw-nav').style.direction =
+      next === 'ar' ? 'rtl' : 'ltr';
+
+    /* Update contact WhatsApp message */
+    const whatsappLink = root.querySelector('#mw-whatsapp-link');
+
+    const arabicMessage =
+      'السلام عليكم، أرغب في طلب عرض سعر من المنزلاوي لتجارة الأعلاف.\n\n' +
+      'موقع المزرعة:\n' +
+      'الكمية المطلوبة:\n' +
+      'نوع النشاط:';
+
+    const englishMessage =
+      'Hello, I would like to request a price quotation from Elmanzalawy For Animal Feeds.\n\n' +
+      'Farm Location:\n' +
+      'Required Quantity:\n' +
+      'Activity Type:';
+
+    const message = next === 'ar' ? arabicMessage : englishMessage;
+
+    whatsappLink.href =
+      'https://wa.me/201080906661?text=' + encodeURIComponent(message);
+
+    /* Close mobile menu after language change */
+    root.querySelector('.mw-nav').classList.remove('open');
+
+  };
+
+})();
+</script>
