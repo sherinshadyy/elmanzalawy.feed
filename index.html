@@ -2,12 +2,11 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f8f2e9">
-  <meta name="description" content="المنزلاوي لتجارة الأعلاف — حلول تغذية متكاملة للمزارع.">
   <title>المنزلاوي لتجارة الأعلاف</title>
 </head>
-<body style="margin:0; padding:0; width:100%; min-height:100%;">
+<body style="margin:0; padding:0; width:100%; overflow-x:hidden;">
 
 <div id="manzalawy-home" dir="rtl" data-language="ar">
 
@@ -26,7 +25,14 @@
   color:var(--text);
   background:var(--cream);
   width:100%;
-  overflow:hidden;
+  max-width:100%;
+  height:auto !important;
+  min-height:0;
+  max-height:none !important;
+  overflow-x:clip;
+  overflow-y:visible !important;
+  position:relative;
+  display:flow-root;
   line-height:1.7;
   box-sizing:border-box;
 }
@@ -1143,13 +1149,18 @@
 /* FULL SCREEN WIDTH — REMOVE WHITE SIDE EDGES */
 
 #manzalawy-home {
-  width: 100vw !important;
-  max-width: 100vw !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
   position: relative;
-  left: 50%;
-  margin-left: -50vw !important;
+  left: auto !important;
+  margin-left: 0 !important;
   margin-right: 0 !important;
-  overflow-x: clip;
+  overflow-x: clip !important;
+  overflow-y: visible !important;
+  display: flow-root;
 }
 
 /* ENGLISH HERO — TEXT ON THE RIGHT */
@@ -1170,11 +1181,15 @@
 @media(max-width:650px) {
 
   #manzalawy-home {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    left: 50%;
-    margin-left: -50vw !important;
-    overflow-x: clip;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    left: auto !important;
+    margin-left: 0 !important;
+    overflow-x: clip !important;
+    overflow-y: visible !important;
   }
 
   #manzalawy-home[data-language="en"] .mw-hero {
@@ -1222,398 +1237,41 @@
 }
 
 
-
-/* FINAL MOBILE REFINEMENTS — preserves the desktop layout */
+/* PAGE FLOW SAFETY — KEEP ALL SECTIONS IN THE NORMAL SCROLLING PAGE */
 #manzalawy-home {
-  min-height:100vh;
-  height:auto;
-  overflow-x:clip;
-  overflow-y:visible;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  overflow-x:clip !important;
+  overflow-y:visible !important;
 }
 
-#manzalawy-home img,
-#manzalawy-home svg {
-  max-width:100%;
+#manzalawy-home > header,
+#manzalawy-home > section,
+#manzalawy-home > footer {
+  position:relative;
+  float:none;
+  clear:both;
+  width:100%;
+  max-height:none;
+  flex:none;
 }
 
-@media (max-width:650px) {
-  #manzalawy-home,
-  #manzalawy-home * {
-    min-width:0;
-  }
+#manzalawy-home .mw-hero {
+  flex-shrink:0;
+}
 
-  #manzalawy-home {
-    width:100vw !important;
-    max-width:100vw !important;
-    overflow-x:clip;
-    overflow-y:visible;
-  }
-
-  #manzalawy-home .mw-header {
-    height:64px;
-  }
-
-  #manzalawy-home .mw-header-inner {
-    width:94%;
-    gap:5px;
-  }
-
-  #manzalawy-home .mw-logo {
-    gap:4px;
-  }
-
-  #manzalawy-home .mw-logo-symbol {
-    width:37px;
-    height:37px;
-  }
-
-  #manzalawy-home .mw-logo-text strong {
-    font-size:15px;
-  }
-
-  #manzalawy-home .mw-logo-text span {
-    font-size:10px;
-  }
-
-  #manzalawy-home .mw-logo-text small {
-    font-size:7px;
-  }
-
-  #manzalawy-home .mw-header-actions {
-    gap:5px;
-  }
-
-  #manzalawy-home .mw-header-actions .mw-order-btn {
-    padding:7px 9px;
-    font-size:10px;
-    gap:4px;
-  }
-
-  #manzalawy-home .mw-language-btn {
-    padding:6px 8px;
-    font-size:10px;
-  }
-
-  #manzalawy-home .mw-menu-btn .mw-icon {
-    width:24px;
-    height:24px;
-  }
-
-  #manzalawy-home .mw-nav {
-    top:64px;
-    z-index:100;
-    width:100%;
+@media(max-width:650px) {
+  #manzalawy-home > header,
+  #manzalawy-home > section,
+  #manzalawy-home > footer {
+    height:auto;
+    min-height:0;
   }
 
   #manzalawy-home .mw-hero {
-    height:clamp(350px,112vw,420px);
-    min-height:350px;
-    max-height:420px;
-    background-position:43% center;
-  }
-
-  #manzalawy-home .mw-hero-content {
-    width:92%;
-  }
-
-  #manzalawy-home .mw-hero-copy {
-    width:100%;
-    max-width:390px;
-    padding:0 4px 20px;
-  }
-
-  #manzalawy-home .mw-hero-copy h1 {
-    font-size:clamp(21px,5.8vw,25px);
-    line-height:1.45;
-    margin-bottom:8px;
-  }
-
-  #manzalawy-home .mw-hero-copy p {
-    font-size:clamp(11px,3.2vw,13px);
-    line-height:1.8;
-    margin-bottom:12px;
-  }
-
-  #manzalawy-home .mw-hero-copy .mw-order-btn {
-    padding:9px 17px;
-    font-size:12px;
-  }
-
-  #manzalawy-home .mw-benefits {
-    padding:14px 0;
-  }
-
-  #manzalawy-home .mw-benefits-grid {
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:8px 0;
-  }
-
-  #manzalawy-home .mw-benefit {
-    min-height:82px;
-    padding:7px 8px;
-  }
-
-  #manzalawy-home .mw-benefit .mw-icon {
-    width:31px;
-    height:31px;
-    margin-bottom:4px;
-  }
-
-  #manzalawy-home .mw-benefit p {
-    font-size:clamp(10px,2.9vw,12px);
-    line-height:1.55;
-  }
-
-  #manzalawy-home .mw-section-heading {
-    gap:10px;
-    margin-bottom:12px;
-    padding:0 5px;
-  }
-
-  #manzalawy-home .mw-section-heading h2 {
-    font-size:clamp(20px,5.5vw,24px);
-  }
-
-  #manzalawy-home .mw-section-heading span {
-    width:30px;
-    flex:0 0 30px;
-  }
-
-  #manzalawy-home .mw-products {
-    padding:12px 0 20px;
-  }
-
-  #manzalawy-home .mw-products-grid {
-    grid-template-columns:minmax(0,1fr);
-    gap:11px;
-  }
-
-  #manzalawy-home .mw-product {
-    display:grid;
-    grid-template-columns:36% minmax(0,1fr);
-    min-height:108px;
-    border-radius:13px;
-    text-align:right;
-  }
-
-  #manzalawy-home .mw-product-image {
-    height:100%;
-    min-height:108px;
-  }
-
-  #manzalawy-home .mw-product-content {
-    padding:8px 11px;
-  }
-
-  #manzalawy-home .mw-product h3 {
-    font-size:14px;
-    line-height:1.5;
-    margin-bottom:3px;
-  }
-
-  #manzalawy-home .mw-product p {
-    font-size:11px;
-    line-height:1.6;
-  }
-
-  #manzalawy-home .mw-why {
-    padding-bottom:19px;
-  }
-
-  #manzalawy-home .mw-why-grid {
-    grid-template-columns:minmax(0,1fr);
-    gap:13px;
-  }
-
-  #manzalawy-home .mw-why-content {
-    width:100%;
-  }
-
-  #manzalawy-home .mw-why-title {
-    justify-content:center;
-    gap:10px;
-  }
-
-  #manzalawy-home .mw-why-title h2 {
-    font-size:clamp(20px,5.4vw,23px);
-  }
-
-  #manzalawy-home .mw-why-title span {
-    width:28px;
-    flex:0 0 28px;
-  }
-
-  #manzalawy-home .mw-why-list li {
-    font-size:12px;
-    line-height:1.65;
-    gap:8px;
-    margin:7px 0;
-  }
-
-  #manzalawy-home .mw-why-image {
-    width:100%;
-    height:clamp(145px,48vw,180px);
-    grid-row:2;
-  }
-
-  #manzalawy-home .mw-contact {
-    width:92%;
-    padding:18px 12px;
-    margin-bottom:17px;
-    border-radius:15px;
-  }
-
-  #manzalawy-home .mw-contact-grid {
-    grid-template-columns:minmax(0,1fr);
-    gap:18px;
-  }
-
-  #manzalawy-home .mw-form-area {
-    padding:0;
-  }
-
-  #manzalawy-home .mw-contact-title {
-    gap:7px;
-  }
-
-  #manzalawy-home .mw-contact-title h2 {
-    font-size:clamp(19px,5.2vw,22px);
-  }
-
-  #manzalawy-home .mw-contact-title .mw-icon {
-    width:34px;
-    height:34px;
-  }
-
-  #manzalawy-home .mw-form-subtitle {
-    font-size:12px;
-  }
-
-  #manzalawy-home .mw-whatsapp-details {
-    flex-direction:column;
-    gap:8px;
-    margin:13px 0;
-  }
-
-  #manzalawy-home .mw-whatsapp-details div {
-    width:100%;
-    padding:9px 11px;
-    font-size:11px;
-    justify-content:flex-start;
-  }
-
-  #manzalawy-home .mw-whatsapp-details .mw-icon {
-    width:20px;
-    height:20px;
-  }
-
-  #manzalawy-home .mw-whatsapp-btn {
-    width:100%;
-    padding:11px 14px;
-    font-size:13px;
-  }
-
-  #manzalawy-home .mw-form-note {
-    font-size:11px;
-  }
-
-  #manzalawy-home .mw-contact-details,
-  #manzalawy-home[data-language="en"] .mw-contact-details {
-    border:0;
-    border-top:1px solid var(--gold);
-    padding:14px 0 0;
-    gap:11px;
-  }
-
-  #manzalawy-home .mw-contact-location {
-    justify-content:center;
-    text-align:center;
-    font-size:12px;
-  }
-
-  #manzalawy-home .mw-phone {
-    justify-content:center;
-    font-size:14px;
-  }
-
-  #manzalawy-home .mw-footer {
-    padding:24px 0 16px;
-    border-top-width:6px;
-    border-radius:28px 0 0 0;
-  }
-
-  #manzalawy-home .mw-footer-inner {
-    width:92%;
-    grid-template-columns:minmax(0,1fr);
-    gap:13px;
-  }
-
-  #manzalawy-home .mw-footer-brand h3 {
-    font-size:16px;
-  }
-
-  #manzalawy-home .mw-footer-brand p {
-    font-size:14px;
-  }
-
-  #manzalawy-home .mw-footer-social {
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:9px;
-    font-size:10px;
-  }
-
-  #manzalawy-home .mw-footer-credit {
-    font-size:10px;
-    margin-top:12px;
-  }
-
-  /* English text direction and card alignment */
-  #manzalawy-home[data-language="en"] .mw-product {
-    direction:ltr;
-    text-align:left;
-  }
-
-  #manzalawy-home[data-language="en"] .mw-why-title {
-    direction:ltr;
-  }
-
-  #manzalawy-home[data-language="en"] .mw-why-list li {
-    direction:ltr;
-    text-align:left;
-  }
-
-  #manzalawy-home[data-language="en"] .mw-contact-details {
-    direction:ltr;
-  }
-}
-
-@media(max-width:380px) {
-  #manzalawy-home .mw-header-inner {
-    width:96%;
-  }
-
-  #manzalawy-home .mw-logo-symbol {
-    width:33px;
-    height:33px;
-  }
-
-  #manzalawy-home .mw-logo-text strong {
-    font-size:13px;
-  }
-
-  #manzalawy-home .mw-logo-text span {
-    font-size:9px;
-  }
-
-  #manzalawy-home .mw-header-actions .mw-order-btn {
-    padding:6px 7px;
-    font-size:9px;
-  }
-
-  #manzalawy-home .mw-language-btn {
-    padding:5px 6px;
-    font-size:9px;
+    height:440px;
+    min-height:440px;
   }
 }
 
